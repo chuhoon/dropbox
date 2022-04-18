@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Roboto:wght@100&display=swap');
+
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.cont-dropdown {
+  display: block;
+  position: relative;
+  width: 200px;
+  margin: 100px auto;
+}
+
+.btn-dropdown {
+  width: 100%;
+  margin-bottom: 9px;
+  padding: 12px 63px 12px 14px;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.06px;
+  background-color: white;
+  background: url('./images/icon-Triangle-down.png') no-repeat 95% 50%;
+  cursor: pointer;
+}
+
+.btn-dropdown:hover,
+.btn-dropdown:focus {
+  outline: 3px solid #f8e4ff;
+  border: 1px solid #9b51e0;
+}
+
+.btn-dropdown.on {
+  background: url('./images/icon-Triangle-up.png') no-repeat 95% 50%;
+}
+
+.btn-dropdown.on + .ul-language {
+  display: block;
+}
+
+ul.ul-language {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  padding: 4px 0;
+}
+
+.li-language {
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 7px 144px 7px 10px;
+  margin: 5px 8px;
+  border: 1px;
+}
+
+.li-language:focus,
+.li-language:hover {
+  background-color: #f8e4ff;
+  outline: 1px solid #f8e4ff;
+  border-radius: 8px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown-selectbox 구현</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="selectbox.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <article class="cont-dropdown">
+      <form action="">
+        <h1 class="blind">드롭다운 셀렉박스</h1>
+        <button class="btn-dropdown">최애 프로그래밍 언어</button>
+        <ul class="ul-language">
+          <li class="li-language python">Python</li>
+          <li class="li-language Java">Java</li>
+          <li class="li-language JavaScript">JavaScript</li>
+          <li class="li-language C#">C#</li>
+          <li class="li-language C/C++">C/C++</li>
+        </ul>
+      </form>
+    </article>
+    <script>
+      const btn = document.querySelector('.btn-dropdown');
+      const list = document.querySelector('.ul-language');
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('on');
+      });
+      list.addEventListener('click', (event) => {
+        if (event.target.nodeName === 'BUTTON') {
+          btn.innerText = event.target.innerText;
+          btn.classList.remove('on');
+        }
+      });
+    </script>
+  </body>
+</html>
