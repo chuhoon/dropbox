@@ -10,8 +10,6 @@
 }
 
 .cont-dropdown {
-  display: block;
-  position: relative;
   width: 200px;
   margin: 100px auto;
 }
@@ -32,7 +30,6 @@
   cursor: pointer;
 }
 
-.btn-dropdown:hover,
 .btn-dropdown:focus {
   outline: 3px solid #f8e4ff;
   border: 1px solid #9b51e0;
@@ -48,7 +45,6 @@
 
 ul.ul-language {
   display: none;
-  position: absolute;
   width: 100%;
   background: #ffffff;
   border: 1px solid #c4c4c4;
@@ -58,7 +54,12 @@ ul.ul-language {
   padding: 4px 0;
 }
 
-.li-language {
+.ul-language.on {
+  display: block;
+}
+
+.btn-language {
+  width: 180px;
   font-family: 'Roboto';
   font-weight: 600;
   font-size: 14px;
@@ -66,10 +67,10 @@ ul.ul-language {
   padding: 7px 144px 7px 10px;
   margin: 5px 8px;
   border: 1px;
+  background-color: white;
 }
 
-.li-language:focus,
-.li-language:hover {
+.btn-language:hover {
   background-color: #f8e4ff;
   outline: 1px solid #f8e4ff;
   border-radius: 8px;

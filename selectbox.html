@@ -16,13 +16,25 @@
     <article class="cont-dropdown">
       <form action="">
         <h1 class="blind">드롭다운 셀렉박스</h1>
-        <button class="btn-dropdown">최애 프로그래밍 언어</button>
+        <button class="btn-dropdown" type="button">최애 프로그래밍 언어</button>
         <ul class="ul-language">
-          <li class="li-language python">Python</li>
-          <li class="li-language Java">Java</li>
-          <li class="li-language JavaScript">JavaScript</li>
-          <li class="li-language C#">C#</li>
-          <li class="li-language C/C++">C/C++</li>
+          <li>
+            <button class="btn-language python" type="button">Python</button>
+          </li>
+          <li>
+            <button class="btn-language Java" type="button">Java</button>
+          </li>
+          <li>
+            <button class="btn-language JavaScript" type="button">
+              JavaScript
+            </button>
+          </li>
+          <li>
+            <button class="btn-language C#" type="button">C#</button>
+          </li>
+          <li>
+            <button class="btn-language C/C++" type="button">C/C++</button>
+          </li>
         </ul>
       </form>
     </article>
@@ -30,12 +42,12 @@
       const btn = document.querySelector('.btn-dropdown');
       const list = document.querySelector('.ul-language');
       btn.addEventListener('click', () => {
-        btn.classList.toggle('on');
+        list.classList.toggle('on');
       });
       list.addEventListener('click', (event) => {
         if (event.target.nodeName === 'BUTTON') {
           btn.innerText = event.target.innerText;
-          btn.classList.remove('on');
+          list.classList.remove('on');
         }
       });
     </script>
