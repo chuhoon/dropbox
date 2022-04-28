@@ -2,7 +2,7 @@
 
 - [배포링크 링크🐤](https://chuhoon.github.io/select-box-custom/)
 
-![Hnet com-image](![Hnet-image](https://user-images.githubusercontent.com/68219145/165703354-9ec587d1-4a31-4cf2-89a8-7b779ce35ba4.gif))
+![Hnet-image](https://user-images.githubusercontent.com/68219145/165703477-399c86ee-fe10-45b7-a670-fe1a39fc877d.gif)
 
 ### 소개
 
