@@ -16,9 +16,14 @@
 
 - <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/></a>
 
-<br>
+- <img src="https://img.shields.io/badge/Javascript-ffb13b?style=flat-square&logo=javascript&logoColor=white"/>             
+  <br>
 
 ### 느낀점
 
 1. select box와 option은 JavaScript를 사용하지 않으면 커스텀이 어렵다.
 2. option의 커스터마이징을 자유롭게 하고 싶다면 select 태그를 사용하지 않고 직접 만드는 것도 괜찮다. CSS, JavaScript 직접 짜야한다.
+
+### 22-05-12 추가
+
+1. DOM을 학습하여 JavaScript를 활용하여 버튼의 toggle 기능과 list를 클릭하였을 때 버튼의 innerText의 값이 설정되게 만들었습니다.
